@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import Card from './Card';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const cards = [
+    {
+      id: 'card-1',
+      name: 'Roro',
+      frontMessage: 'Since you made it this far, click the button!',
+      backMessage: 'You managed to finish your second day with React successfully!',
+    },
+  ];
+
+  return(
+    <div className="app-container">
+      <div className="card-list">
+        {cards.map((card) => (
+          <Card
+            key={card.id}
+            name={card.name}
+            frontMessage={card.frontMessage}
+            backMessage={card.backMessage}
+          />
+        ))}
+      </div>
     </div>
   );
 }

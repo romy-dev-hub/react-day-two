@@ -15,7 +15,7 @@ function Card(props) {
         <div className="card-front">
           <img src={logo} className="react-logo" alt="React Logo" />
           <p>{props.frontMessage}</p>
-          <button onClick={handleFlip}>Click Me</button>
+          {props.name === 'Roro' ? <button onClick={handleFlip}>Click Me</button> : null}
         </div>
         <div className="card-back">
           <img src={logo} className="react-logo" alt="React Logo" />

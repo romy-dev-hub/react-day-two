@@ -51,6 +51,7 @@
 
 .card-back {
   background-color: #fce4ec;
+  background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
   transform: rotateY(180deg);
 }
 

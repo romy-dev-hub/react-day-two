@@ -8,6 +8,7 @@ function App() {
       name: 'Roro',
       frontMessage: 'Since you made it this far, click the button!',
       backMessage: 'You managed to finish your second day with React successfully!',
+      age: 20,
     },
   ];
 
@@ -20,6 +21,7 @@ function App() {
             name={card.name}
             frontMessage={card.frontMessage}
             backMessage={card.backMessage}
+            age={card.age}
           />
         ))}
       </div>

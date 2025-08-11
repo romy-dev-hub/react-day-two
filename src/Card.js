@@ -21,6 +21,7 @@ function Card(props) {
           <img src={logo} className="react-logo" alt="React Logo" />
           <h3>Congrats, {props.name}!</h3>
           <p>{props.backMessage}</p>
+          <p>fun fact: i will be {props.age} years old this 25th august!</p>
         </div>
       </div>
     </div>
